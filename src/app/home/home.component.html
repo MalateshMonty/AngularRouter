@@ -1,0 +1,15 @@
+<div>
+  <label>Name: </label> <br />
+  <input type="text" /> <br />
+</div>
+<div>
+  <label>Adress: </label> <br />
+  <input type="text"  [(ngModel)]="name"  /> <br />
+</div>
+<span>{{name}}<span>
+
+<h1>List of Objects </h1>
+<li *ngFor="let hero of heroes">
+  <span class="badge">{{hero.id}}</span> {{hero.name}}
+  </li>
+<button class="btn btn-primary" (click)="save()">{{'home'| translate}} </button>
